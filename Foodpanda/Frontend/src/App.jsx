@@ -10,6 +10,7 @@ import Restaurant from './pages/Restaurant'
 import Search from './pages/Search'
 import Profile from './pages/Profile'
 import ForgotPass from './pages/ForgotPass'
+import Footer from './components/templates/Footer'
 
 function App() {
   const route = [
@@ -39,6 +40,7 @@ function App() {
             <Route path='/profile' element={<Profile />} />
             <Route path='/verify' element={<ForgotPass />} />
           </Routes>
+          <Footer />
         </Router>
       </div>
     </>
