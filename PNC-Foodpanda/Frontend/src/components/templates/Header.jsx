@@ -14,6 +14,7 @@ import { Link } from 'react-router-dom'
 import SigninBtn from '../buttons/SigninBtn'
 import HomeProfile from '../profile/HomeProfile'
 import OfferBtn from '../buttons/OfferBtn'
+import CartBtn from '../buttons/CartBtn'
 
 const products = [
   { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
@@ -54,6 +55,9 @@ export default function Header() {
           </button>
         </div>
         <div className="hidden lg:flex lg:items-center lg:gap-3 lg:flex-1 lg:justify-end">
+          <Link to={'/cart'}>
+          <CartBtn />
+          </Link>
           <Link to={'/offer'}>
             <OfferBtn />
           </Link>

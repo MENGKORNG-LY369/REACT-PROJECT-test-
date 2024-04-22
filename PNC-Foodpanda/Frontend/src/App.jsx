@@ -8,6 +8,8 @@ import Search from './pages/Search';
 import Offer from './pages/Offer';
 import Profile from './pages/Profile';
 import Signout from './pages/Signout';
+import Cart from './pages/Cart';
+import Signup from './pages/Signup';
 
 function App() {
     const router = [
@@ -19,6 +21,8 @@ function App() {
         {"/offer": <Offer />},
         {"/profile": <Profile />},
         {"/signout": <Signout />},
+        {"/cart": <Cart />},
+        {"/signup": <Signup />},
     ]
 
     return (
@@ -33,6 +37,8 @@ function App() {
                     <Route path='/offer' element={<Offer />} />
                     <Route path='/profile' element={<Profile />} /> 
                     <Route path='/signout' element={<Signout />} /> 
+                    <Route path='/cart' element={<Cart />} /> 
+                    <Route path='/signup' element={<Signup />} /> 
                 </Routes>
             </Router>
         </div>
