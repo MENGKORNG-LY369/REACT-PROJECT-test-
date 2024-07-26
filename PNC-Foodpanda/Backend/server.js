@@ -7,7 +7,7 @@ const AdminRouter = require('./Router/AdminRoute');
 const DeliveryRouter = require('./Router/DeliveryRoute');
 
 const app = express();
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 app.use(cors());
 

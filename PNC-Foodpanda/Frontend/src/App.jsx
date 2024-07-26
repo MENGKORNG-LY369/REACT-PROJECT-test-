@@ -26,7 +26,6 @@ function App() {
     ]
 
     return (
-        <div className='min-h-svh flex justify-between flex-col'>
             <Router>
                 <Routes>
                     <Route path='/' element={<Home />} />
@@ -41,7 +40,6 @@ function App() {
                     <Route path='/signup' element={<Signup />} /> 
                 </Routes>
             </Router>
-        </div>
     )
 }
 
